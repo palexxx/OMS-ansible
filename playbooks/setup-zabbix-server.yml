@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: tag_Name_zabbix
   connection: local
   user: ec2_user
   become: yes
@@ -8,13 +8,14 @@
   - { role: apache2, action: 'virtualhost', zabbix_config: 'yes', vhost_name: 'zabbix', vhost_dir: '/usr/share/zabbix' }
   - { role: simple-mariadb }
   - { role: zabbixserver }
-  #:- { role: mysql } #action: 'create-user',  database_user: 'zabbix', database_password: 'zabbix' }
   - { role: zabbixserver, action: 'zabbixcreatedb' }
 
-#- hosts: zabbix
-#  become: yes
-#  roles:
-#  - { role: zabbixserver, action: 'zabbixcreategroup', zabbix_groups_for_create: "{{ groups.keys() }}" }
+- hosts: tag_Name_zabbix
+  connection: local
+  user: ec2_user
+  become: yes
+  roles:
+  - { role: zabbixserver, action: 'zabbixcreategroup', zabbix_groups_for_create: "{{ groups.keys() }}" }
 #
 #- hosts: repository
 #  become: yes

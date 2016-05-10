@@ -4,8 +4,8 @@
    with_items:
      - policycoreutils-python
      - libselinux-python
-     - zabbix-server
-     - zabbix-sender
+     - zabbix-server-2.4.7
+    # - zabbix-sender
      - zabbix-server-mysql
      - zabbix-web-mysql
      - zabbix-agent
