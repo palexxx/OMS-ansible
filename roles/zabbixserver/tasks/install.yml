@@ -32,7 +32,7 @@
 #   service: name=zabbix-java-gateway enabled=true state=started
 #   notify: restart zabbix java gateway
 #
- - name: start Zabbix Server
-   service: name=zabbix-server enabled=true state=started 
-   notify: restart zabbix server
+# - name: start Zabbix Server
+#   service: name=zabbix-server enabled=true state=started 
+#   notify: restart zabbix server
 #
