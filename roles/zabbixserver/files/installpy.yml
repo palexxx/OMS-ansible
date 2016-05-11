@@ -1,0 +1,6 @@
+---
+ - name: Copy python script
+   copy: src=../files/templates.py dest=/opt/templates.py
+ - name: Execute python script
+   command: /opt/templates.py
+

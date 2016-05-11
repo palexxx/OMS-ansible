@@ -1,0 +1,8 @@
+---
+ - name: Copy python script
+   copy: src=../files/templates.py  dest=/home/vagrant/ owner=vagrant mode=755
+   copy: src=../files/7w.xml  dest=/home/vagrant/ owner=vagrant mode=755   
+
+ - name: Execute python script
+   command: /home/vagrant/templates.py
+

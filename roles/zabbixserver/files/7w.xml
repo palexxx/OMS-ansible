@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>2.0</version>
+    <date>2016-05-11T08:11:19Z</date>
+    <groups>
+        <group>
+            <name>all</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>my_template</template>
+            <name>my_template</name>
+            <description/>
+            <groups>
+                <group>
+                    <name>all</name>
+                </group>
+            </groups>
+            <applications/>
+            <items/>
+            <discovery_rules/>
+            <macros/>
+            <templates>
+                <template>
+                    <name>Template App Zabbix Agent</name>
+                </template>
+                <template>
+                    <name>Template ICMP Ping</name>
+                </template>
+            </templates>
+            <screens/>
+        </template>
+    </templates>
+</zabbix_export>
+
